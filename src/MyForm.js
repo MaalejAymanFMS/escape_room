@@ -304,7 +304,7 @@ function MyForm() {
       "isCleaning": Cb_Cleaning !== "" ? Cb_Cleaning : false
     }
     AddUser(json);
-    //console.log(json);
+    console.log(json);
     e.preventDefault();
     // Handle form submission here
   };
