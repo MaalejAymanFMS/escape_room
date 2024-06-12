@@ -1,8 +1,6 @@
 import React, { useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
-import './App.css'
-
-
+import "./App.css";
 
 function MyForm() {
   //name
@@ -224,85 +222,78 @@ function MyForm() {
   };
 
   const handleSubmit = (e) => {
-    console.log(Start_Hour !== "" ? Start_Hour : "taaat")
+    console.log(Start_Hour !== "" ? Start_Hour : "taaat");
     var json = {
-      "name": Name != null ? Name : "",
-      "cardNo": Bracelet_Id,
-      "color": Color,
-      "pin": Pin,
-      "startHour": parseInt(Start_Hour !== "" ? Start_Hour : "9"),
-      "numberOfHours": 0,
-      "Escape1": {
-        "access": Cb_Er1 ? 1 : 0,
-        "startHour": parseInt(Escape_Room1 !== "" ? Escape_Room1 : "9"),
-        "numberOfHours": parseInt(H_Er1 !== "" ? H_Er1 : "1")
+      name: Name != null ? Name : "",
+      cardNo: Bracelet_Id,
+      color: Color,
+      pin: Pin,
+      startHour: parseInt(Start_Hour !== "" ? Start_Hour : "9"),
+      numberOfHours: 0,
+      Escape1: {
+        access: Cb_Er1 ? 1 : 0,
+        startHour: parseInt(Escape_Room1 !== "" ? Escape_Room1 : "9"),
+        numberOfHours: parseInt(H_Er1 !== "" ? H_Er1 : "1"),
       },
-      "Escape2": {
-        "access": Cb_Er2 ? 1 : 0,
-        "startHour": parseInt(Escape_Room2 !== "" ? Escape_Room2 : "9"),
-        "numberOfHours": parseInt(H_Er2 !== "" ? H_Er2 : "1")
+      Escape2: {
+        access: Cb_Er2 ? 1 : 0,
+        startHour: parseInt(Escape_Room2 !== "" ? Escape_Room2 : "9"),
+        numberOfHours: parseInt(H_Er2 !== "" ? H_Er2 : "1"),
       },
-      "Escape3": {
-        "access": Cb_Er3 ? 1 : 0,
-        "startHour": parseInt(Escape_Room3 !== "" ? Escape_Room3 : "9"),
-        "numberOfHours": parseInt(H_Er3 !== "" ? H_Er3 : "1")
+      Escape3: {
+        access: Cb_Er3 ? 1 : 0,
+        startHour: parseInt(Escape_Room3 !== "" ? Escape_Room3 : "9"),
+        numberOfHours: parseInt(H_Er3 !== "" ? H_Er3 : "1"),
       },
-      "Escape4": {
-        "access": Cb_Er4 ? 1 : 0,
-        "startHour": parseInt(Escape_Room4 !== "" ? Escape_Room4 : "9"),
-        "numberOfHours": parseInt(H_Er4 !== "" ? H_Er4 : "1")
+      Escape4: {
+        access: Cb_Er4 ? 1 : 0,
+        startHour: parseInt(Escape_Room4 !== "" ? Escape_Room4 : "9"),
+        numberOfHours: parseInt(H_Er4 !== "" ? H_Er4 : "1"),
       },
-      "Escape5": {
-        "access": Cb_Er5 ? 1 : 0,
-        "startHour": parseInt(Escape_Room5 !== "" ? Escape_Room5 : "9"),
-        "numberOfHours": parseInt(H_Er5 !== "" ? H_Er5 : "1")
-      }
-      ,
-      "Laser1": {
-        "access": Cb_Lr1 ? 1 : 0,
-        "startHour": parseInt(Laser_Room1 !== "" ? Laser_Room1 : "9"),
-        "numberOfHours": parseInt(H_Lr1 !== "" ? H_Lr1 : "1")
-      }
-      ,
-      "Laser2": {
-        "access": Cb_Lr2 ? 1 : 0,
-        "startHour": parseInt(Laser_Room2 !== "" ? Laser_Room2 : "9"),
-        "numberOfHours": parseInt(H_Lr2 !== "" ? H_Lr2 : "1")
-      }
-      ,
-      "Conference": {
-        "access": Cb_ConfR ? 1 : 0,
-        "startHour": parseInt(Conference_Room !== "" ? Conference_Room : "9"),
-        "numberOfHours": parseInt(H_ConfR !== "" ? H_ConfR : "1")
-      }
-      ,
-      "Console": {
-        "access": Cb_ConsR ? 1 : 0,
-        "startHour": parseInt(Console_Room !== "" ? Console_Room : "9"),
-        "numberOfHours": parseInt(H_ConsR !== "" ? H_ConsR : "1")
-      }
-      ,
-      "EventRoom": {
-        "access": Cb_EventR ? 1 : 0,
-        "startHour": parseInt(Event_Room !== "" ? Event_Room : "9"),
-        "numberOfHours": parseInt(H_EventR !== "" ? H_EventR : "1")
-      }
-      ,
-      "AxeThrowing": {
-        "access": Cb_At ? 1 : 0,
-        "startHour": parseInt(Axe_Throwing !== "" ? Axe_Throwing : "9"),
-        "numberOfHours": parseInt(H_At !== "" ? H_At : "1")
-      }
-      ,
-      "GameOn": {
-        "access": Cb_Go ? 1 : 0,
-        "startHour": parseInt(Game_On !== "" ? Game_On : "9"),
-        "numberOfHours": parseInt(H_Go !== "" ? H_Go : "1")
+      Escape5: {
+        access: Cb_Er5 ? 1 : 0,
+        startHour: parseInt(Escape_Room5 !== "" ? Escape_Room5 : "9"),
+        numberOfHours: parseInt(H_Er5 !== "" ? H_Er5 : "1"),
       },
-      "isSuper": Cb_Super !== "" ? Cb_Super : false,
-      "isAdmin": Cb_Admin !== "" ? Cb_Admin : false,
-      "isCleaning": Cb_Cleaning !== "" ? Cb_Cleaning : false
-    }
+      Laser1: {
+        access: Cb_Lr1 ? 1 : 0,
+        startHour: parseInt(Laser_Room1 !== "" ? Laser_Room1 : "9"),
+        numberOfHours: parseInt(H_Lr1 !== "" ? H_Lr1 : "1"),
+      },
+      Laser2: {
+        access: Cb_Lr2 ? 1 : 0,
+        startHour: parseInt(Laser_Room2 !== "" ? Laser_Room2 : "9"),
+        numberOfHours: parseInt(H_Lr2 !== "" ? H_Lr2 : "1"),
+      },
+      Conference: {
+        access: Cb_ConfR ? 1 : 0,
+        startHour: parseInt(Conference_Room !== "" ? Conference_Room : "9"),
+        numberOfHours: parseInt(H_ConfR !== "" ? H_ConfR : "1"),
+      },
+      Console: {
+        access: Cb_ConsR ? 1 : 0,
+        startHour: parseInt(Console_Room !== "" ? Console_Room : "9"),
+        numberOfHours: parseInt(H_ConsR !== "" ? H_ConsR : "1"),
+      },
+      EventRoom: {
+        access: Cb_EventR ? 1 : 0,
+        startHour: parseInt(Event_Room !== "" ? Event_Room : "9"),
+        numberOfHours: parseInt(H_EventR !== "" ? H_EventR : "1"),
+      },
+      AxeThrowing: {
+        access: Cb_At ? 1 : 0,
+        startHour: parseInt(Axe_Throwing !== "" ? Axe_Throwing : "9"),
+        numberOfHours: parseInt(H_At !== "" ? H_At : "1"),
+      },
+      GameOn: {
+        access: Cb_Go ? 1 : 0,
+        startHour: parseInt(Game_On !== "" ? Game_On : "9"),
+        numberOfHours: parseInt(H_Go !== "" ? H_Go : "1"),
+      },
+      isSuper: Cb_Super !== "" ? Cb_Super : false,
+      isAdmin: Cb_Admin !== "" ? Cb_Admin : false,
+      isCleaning: Cb_Cleaning !== "" ? Cb_Cleaning : false,
+    };
     AddUser(json);
     console.log(json);
     e.preventDefault();
@@ -311,8 +302,6 @@ function MyForm() {
 
   return (
     <div className="form-container">
-
-
       <form
         onSubmit={handleSubmit}
         style={{ display: "flex", flexDirection: "column" }}
@@ -333,13 +322,14 @@ function MyForm() {
                   value={Name}
                   onChange={NameChange}
                   className="FormControl"
-
                 />
               </td>
             </tr>
             <tr>
               <td>
-                <label class="label" htmlFor="Bracelet_Id">Bracelet ID:</label>
+                <label class="label" htmlFor="Bracelet_Id">
+                  Bracelet ID:
+                </label>
               </td>
               <td colSpan={2}>
                 <input
@@ -355,7 +345,9 @@ function MyForm() {
             </tr>
             <tr>
               <td>
-                <label class="label" htmlFor="Color">Bracelet Color:</label>
+                <label class="label" htmlFor="Color">
+                  Bracelet Color:
+                </label>
               </td>
               <td colSpan={2}>
                 <select
@@ -364,7 +356,6 @@ function MyForm() {
                   value={Color}
                   onChange={handleColorChange}
                   className="custom-dropdown" // Add a custom class
-
                 >
                   <option value="">--Please choose a Color --</option>
                   <option value="Red">Red</option>
@@ -377,7 +368,9 @@ function MyForm() {
             </tr>
             <tr>
               <td>
-                <label class="label" htmlFor="Pin">Pin:</label>
+                <label class="label" htmlFor="Pin">
+                  Pin:
+                </label>
               </td>
               <td colSpan={2}>
                 <input
@@ -393,7 +386,9 @@ function MyForm() {
             </tr>
             <tr>
               <td>
-                <label class="label" htmlFor="Start_Hour">Start Time :</label>
+                <label class="label" htmlFor="Start_Hour">
+                  Start Time :
+                </label>
               </td>
               <td colSpan={2}>
                 <select
@@ -404,6 +399,8 @@ function MyForm() {
                   className="custom-dropdown"
                 >
                   <option value="">--Please choose a Start Time : --</option>
+                  <option value="80">8:00</option>
+                  <option value="85">8:30</option>
                   <option value="90">9:00</option>
                   <option value="95">9:30</option>
                   <option value="100">10:00</option>
@@ -434,13 +431,20 @@ function MyForm() {
                   <option value="225">22:30</option>
                   <option value="230">23:00</option>
                   <option value="235">23:30</option>
+                  <option value="0">00:00</option>
+                  <option value="5">00:30</option>
+                  <option value="10">01:00</option>
                 </select>
               </td>
             </tr>
-            <tr><td><label class="label">Games:</label></td></tr>
+            <tr>
+              <td>
+                <label class="label">Games:</label>
+              </td>
+            </tr>
 
             <tr>
-              <td >
+              <td>
                 <input
                   class="custom-checkbox"
                   type="checkbox"
@@ -449,10 +453,14 @@ function MyForm() {
                   value={Cb_Er1}
                   onChange={handleCb_Er1Change}
                 />
-                <label class="label" htmlFor="Cb_Er1">Prison Break</label>
+                <label class="label" htmlFor="Cb_Er1">
+                  Prison Break
+                </label>
               </td>
               <td>
-                <label class="label" htmlFor="Escape_Room1">Start Time :</label>
+                <label class="label" htmlFor="Escape_Room1">
+                  Start Time :
+                </label>
                 <select
                   id="Escape_Room1"
                   name="Escape_Room1"
@@ -460,7 +468,8 @@ function MyForm() {
                   onChange={handleEscape_Room1Change}
                   className="custom-dropdown"
                 >
-
+                  <option value="80">8:00</option>
+                  <option value="85">8:30</option>
                   <option value="90">9:00</option>
                   <option value="95">9:30</option>
                   <option value="100">10:00</option>
@@ -491,10 +500,15 @@ function MyForm() {
                   <option value="225">22:30</option>
                   <option value="230">23:00</option>
                   <option value="235">23:30</option>
+                  <option value="0">00:00</option>
+                  <option value="5">00:30</option>
+                  <option value="10">01:00</option>
                 </select>
               </td>
               <td>
-                <label class="label" htmlFor="H_Er1">Count (per 30 minutes):</label>
+                <label class="label" htmlFor="H_Er1">
+                  Count (per 30 minutes):
+                </label>
                 <select
                   id="H_Er1"
                   name="H_Er1"
@@ -502,7 +516,6 @@ function MyForm() {
                   onChange={handleH_Er1Change}
                   className="custom-dropdown"
                 >
-
                   <option value="1">1</option>
                   <option value="2">2</option>
                   <option value="3">3</option>
@@ -514,7 +527,6 @@ function MyForm() {
                   <option value="8">8</option>
                   <option value="9">9</option>
                   <option value="10">10</option>
-
                 </select>
               </td>
             </tr>
@@ -529,10 +541,14 @@ function MyForm() {
                   value={Cb_Er2}
                   onChange={handleCb_Er2Change}
                 />
-                <label class="label" htmlFor="Cb_Er2">Escape Room2</label>
+                <label class="label" htmlFor="Cb_Er2">
+                  Escape Room2
+                </label>
               </td>
               <td>
-                <label class="label" htmlFor="Escape_Room2">Start Time :</label>
+                <label class="label" htmlFor="Escape_Room2">
+                  Start Time :
+                </label>
                 <select
                   id="Escape_Room2"
                   name="Escape_Room2"
@@ -540,6 +556,8 @@ function MyForm() {
                   onChange={handleEscape_Room2Change}
                   className="custom-dropdown"
                 >
+                  <option value="80">8:00</option>
+                  <option value="85">8:30</option>
                   <option value="90">9:00</option>
                   <option value="95">9:30</option>
                   <option value="100">10:00</option>
@@ -570,10 +588,15 @@ function MyForm() {
                   <option value="225">22:30</option>
                   <option value="230">23:00</option>
                   <option value="235">23:30</option>
+                  <option value="0">00:00</option>
+                  <option value="5">00:30</option>
+                  <option value="10">01:00</option>
                 </select>
               </td>
               <td>
-                <label class="label" htmlFor="H_Er1">Count (per 30 minutes):</label>
+                <label class="label" htmlFor="H_Er1">
+                  Count (per 30 minutes):
+                </label>
                 <select
                   id="H_Er2"
                   name="H_Er2"
@@ -581,7 +604,6 @@ function MyForm() {
                   onChange={handleH_Er2Change}
                   className="custom-dropdown"
                 >
-
                   <option value="1">1</option>
                   <option value="2">2</option>
                   <option value="3">3</option>
@@ -593,7 +615,6 @@ function MyForm() {
                   <option value="8">8</option>
                   <option value="9">9</option>
                   <option value="10">10</option>
-
                 </select>
               </td>
             </tr>
@@ -608,10 +629,14 @@ function MyForm() {
                   value={Cb_Er3}
                   onChange={handleCb_Er3Change}
                 />
-                <label class="label" htmlFor="Cb_Er3">Sabotage</label>
+                <label class="label" htmlFor="Cb_Er3">
+                  Sabotage
+                </label>
               </td>
               <td>
-                <label class="label" htmlFor="Escape_Room3">Start Time :</label>
+                <label class="label" htmlFor="Escape_Room3">
+                  Start Time :
+                </label>
                 <select
                   id="Escape_Room3"
                   name="Escape_Room3"
@@ -619,6 +644,8 @@ function MyForm() {
                   onChange={handleEscape_Room3Change}
                   className="custom-dropdown"
                 >
+                  <option value="80">8:00</option>
+                  <option value="85">8:30</option>
                   <option value="90">9:00</option>
                   <option value="95">9:30</option>
                   <option value="100">10:00</option>
@@ -649,10 +676,15 @@ function MyForm() {
                   <option value="225">22:30</option>
                   <option value="230">23:00</option>
                   <option value="235">23:30</option>
+                  <option value="0">00:00</option>
+                  <option value="5">00:30</option>
+                  <option value="10">01:00</option>
                 </select>
               </td>
               <td>
-                <label class="label" htmlFor="H_Er1">Count (per 30 minutes):</label>
+                <label class="label" htmlFor="H_Er1">
+                  Count (per 30 minutes):
+                </label>
                 <select
                   id="H_Er3"
                   name="H_Er3"
@@ -671,7 +703,6 @@ function MyForm() {
                   <option value="8">8</option>
                   <option value="9">9</option>
                   <option value="10">10</option>
-
                 </select>
               </td>
             </tr>
@@ -685,10 +716,14 @@ function MyForm() {
                   value={Cb_Er4}
                   onChange={handleCb_Er4Change}
                 />
-                <label class="label" htmlFor="Cb_Er4">Escape Room4</label>
+                <label class="label" htmlFor="Cb_Er4">
+                  Escape Room4
+                </label>
               </td>
               <td>
-                <label class="label" htmlFor="Escape_Room4">Start Time :</label>
+                <label class="label" htmlFor="Escape_Room4">
+                  Start Time :
+                </label>
                 <select
                   id="Escape_Room4"
                   name="Escape_Room4"
@@ -696,7 +731,8 @@ function MyForm() {
                   onChange={handleEscape_Room4Change}
                   className="custom-dropdown"
                 >
-
+                  <option value="80">8:00</option>
+                  <option value="85">8:30</option>
                   <option value="90">9:00</option>
                   <option value="95">9:30</option>
                   <option value="100">10:00</option>
@@ -727,10 +763,15 @@ function MyForm() {
                   <option value="225">22:30</option>
                   <option value="230">23:00</option>
                   <option value="235">23:30</option>
+                  <option value="0">00:00</option>
+                  <option value="5">00:30</option>
+                  <option value="10">01:00</option>
                 </select>
               </td>
               <td>
-                <label class="label" htmlFor="H_Er4">Count (per 30 minutes):</label>
+                <label class="label" htmlFor="H_Er4">
+                  Count (per 30 minutes):
+                </label>
                 <select
                   id="H_Er4"
                   name="H_Er4"
@@ -738,7 +779,6 @@ function MyForm() {
                   onChange={handleH_Er4Change}
                   className="custom-dropdown"
                 >
-
                   <option value="1">1</option>
                   <option value="2">2</option>
                   <option value="3">3</option>
@@ -750,7 +790,6 @@ function MyForm() {
                   <option value="8">8</option>
                   <option value="9">9</option>
                   <option value="10">10</option>
-
                 </select>
               </td>
             </tr>
@@ -764,10 +803,14 @@ function MyForm() {
                   value={Cb_Er5}
                   onChange={handleCb_Er5Change}
                 />
-                <label class="label" htmlFor="Cb_Er5">Escape Room5</label>
+                <label class="label" htmlFor="Cb_Er5">
+                  Escape Room5
+                </label>
               </td>
               <td>
-                <label class="label" htmlFor="Escape_Room5">Start Time :</label>
+                <label class="label" htmlFor="Escape_Room5">
+                  Start Time :
+                </label>
                 <select
                   id="Escape_Room5"
                   name="Escape_Room5"
@@ -775,7 +818,8 @@ function MyForm() {
                   onChange={handleEscape_Room5Change}
                   className="custom-dropdown"
                 >
-
+                  <option value="80">8:00</option>
+                  <option value="85">8:30</option>
                   <option value="90">9:00</option>
                   <option value="95">9:30</option>
                   <option value="100">10:00</option>
@@ -806,10 +850,15 @@ function MyForm() {
                   <option value="225">22:30</option>
                   <option value="230">23:00</option>
                   <option value="235">23:30</option>
+                  <option value="0">00:00</option>
+                  <option value="5">00:30</option>
+                  <option value="10">01:00</option>
                 </select>
               </td>
               <td>
-                <label class="label" htmlFor="H_Er5">Count (per 30 minutes):</label>
+                <label class="label" htmlFor="H_Er5">
+                  Count (per 30 minutes):
+                </label>
                 <select
                   id="H_Er5"
                   name="H_Er5"
@@ -817,7 +866,6 @@ function MyForm() {
                   onChange={handleH_Er5Change}
                   className="custom-dropdown"
                 >
-
                   <option value="1">1</option>
                   <option value="2">2</option>
                   <option value="3">3</option>
@@ -829,7 +877,6 @@ function MyForm() {
                   <option value="8">8</option>
                   <option value="9">9</option>
                   <option value="10">10</option>
-
                 </select>
               </td>
             </tr>
@@ -843,10 +890,14 @@ function MyForm() {
                   value={Cb_Lr1}
                   onChange={handleCb_Lr1Change}
                 />
-                <label class="label" htmlFor="Cb_Lr1">Floor is Lava</label>
+                <label class="label" htmlFor="Cb_Lr1">
+                  Floor is Lava
+                </label>
               </td>
               <td>
-                <label class="label" htmlFor="Laser_Room1">Start Time :</label>
+                <label class="label" htmlFor="Laser_Room1">
+                  Start Time :
+                </label>
                 <select
                   id="Laser_Room1"
                   name="Laser_Room1"
@@ -854,7 +905,8 @@ function MyForm() {
                   onChange={handleLaser_Room1Change}
                   className="custom-dropdown"
                 >
-
+                  <option value="80">8:00</option>
+                  <option value="85">8:30</option>
                   <option value="90">9:00</option>
                   <option value="95">9:30</option>
                   <option value="100">10:00</option>
@@ -885,10 +937,15 @@ function MyForm() {
                   <option value="225">22:30</option>
                   <option value="230">23:00</option>
                   <option value="235">23:30</option>
+                  <option value="0">00:00</option>
+                  <option value="5">00:30</option>
+                  <option value="10">01:00</option>
                 </select>
               </td>
               <td>
-                <label class="label" htmlFor="H_Lr1">Count (per 30 minutes):</label>
+                <label class="label" htmlFor="H_Lr1">
+                  Count (per 30 minutes):
+                </label>
                 <select
                   id="H_Lr1"
                   name="H_Lr1"
@@ -896,7 +953,6 @@ function MyForm() {
                   onChange={handleH_Lr1Change}
                   className="custom-dropdown"
                 >
-
                   <option value="1">1</option>
                   <option value="2">2</option>
                   <option value="3">3</option>
@@ -908,7 +964,6 @@ function MyForm() {
                   <option value="8">8</option>
                   <option value="9">9</option>
                   <option value="10">10</option>
-
                 </select>
               </td>
             </tr>
@@ -922,10 +977,14 @@ function MyForm() {
                   value={Cb_Lr2}
                   onChange={handleCb_Lr2Change}
                 />
-                <label class="label" htmlFor="Cb_Lr2">Interactivity 2</label>
+                <label class="label" htmlFor="Cb_Lr2">
+                  Interactivity 2
+                </label>
               </td>
               <td>
-                <label class="label" htmlFor="Laser_Room2">Start Time :</label>
+                <label class="label" htmlFor="Laser_Room2">
+                  Start Time :
+                </label>
                 <select
                   id="Laser_Room2"
                   name="Laser_Room2"
@@ -933,7 +992,8 @@ function MyForm() {
                   onChange={handleLaser_Room2Change}
                   className="custom-dropdown"
                 >
-
+                  <option value="80">8:00</option>
+                  <option value="85">8:30</option>
                   <option value="90">9:00</option>
                   <option value="95">9:30</option>
                   <option value="100">10:00</option>
@@ -964,10 +1024,15 @@ function MyForm() {
                   <option value="225">22:30</option>
                   <option value="230">23:00</option>
                   <option value="235">23:30</option>
+                  <option value="0">00:00</option>
+                  <option value="5">00:30</option>
+                  <option value="10">01:00</option>
                 </select>
               </td>
               <td>
-                <label class="label" htmlFor="H_Lr2">Count (per 30 minutes):</label>
+                <label class="label" htmlFor="H_Lr2">
+                  Count (per 30 minutes):
+                </label>
                 <select
                   id="H_Lr2"
                   name="H_Lr2"
@@ -975,7 +1040,6 @@ function MyForm() {
                   onChange={handleH_Lr2Change}
                   className="custom-dropdown"
                 >
-
                   <option value="1">1</option>
                   <option value="2">2</option>
                   <option value="3">3</option>
@@ -987,7 +1051,6 @@ function MyForm() {
                   <option value="8">8</option>
                   <option value="9">9</option>
                   <option value="10">10</option>
-
                 </select>
               </td>
             </tr>
@@ -1001,10 +1064,14 @@ function MyForm() {
                   value={Cb_ConfR}
                   onChange={handleCb_ConfRChange}
                 />
-                <label class="label" htmlFor="Cb_ConfR">Conference Room</label>
+                <label class="label" htmlFor="Cb_ConfR">
+                  Conference Room
+                </label>
               </td>
               <td>
-                <label class="label" htmlFor="Conference_Room">Start Time :</label>
+                <label class="label" htmlFor="Conference_Room">
+                  Start Time :
+                </label>
                 <select
                   id="Conference_Room"
                   name="Conference_Room"
@@ -1012,7 +1079,8 @@ function MyForm() {
                   onChange={handleConference_RoomChange}
                   className="custom-dropdown"
                 >
-
+                  <option value="80">8:00</option>
+                  <option value="85">8:30</option>
                   <option value="90">9:00</option>
                   <option value="95">9:30</option>
                   <option value="100">10:00</option>
@@ -1043,10 +1111,15 @@ function MyForm() {
                   <option value="225">22:30</option>
                   <option value="230">23:00</option>
                   <option value="235">23:30</option>
+                  <option value="0">00:00</option>
+                  <option value="5">00:30</option>
+                  <option value="10">01:00</option>
                 </select>
               </td>
               <td>
-                <label class="label" htmlFor="H_ConfR">Count (per 30 minutes):</label>
+                <label class="label" htmlFor="H_ConfR">
+                  Count (per 30 minutes):
+                </label>
                 <select
                   id="H_ConfR"
                   name="H_ConfR"
@@ -1054,7 +1127,6 @@ function MyForm() {
                   onChange={handleH_ConfRChange}
                   className="custom-dropdown"
                 >
-
                   <option value="1">1</option>
                   <option value="2">2</option>
                   <option value="3">3</option>
@@ -1066,7 +1138,6 @@ function MyForm() {
                   <option value="8">8</option>
                   <option value="9">9</option>
                   <option value="10">10</option>
-
                 </select>
               </td>
             </tr>
@@ -1081,10 +1152,14 @@ function MyForm() {
                   value={Cb_ConsR}
                   onChange={handleCb_ConsRChange}
                 />
-                <label class="label" htmlFor="Cb_ConsR">Console Room</label>
+                <label class="label" htmlFor="Cb_ConsR">
+                  Console Room
+                </label>
               </td>
               <td>
-                <label class="label" htmlFor="Console_Room">Start Time :</label>
+                <label class="label" htmlFor="Console_Room">
+                  Start Time :
+                </label>
                 <select
                   id="Console_Room"
                   name="Console_Room"
@@ -1092,7 +1167,8 @@ function MyForm() {
                   onChange={handleConsole_RoomChange}
                   className="custom-dropdown"
                 >
-
+                  <option value="80">8:00</option>
+                  <option value="85">8:30</option>
                   <option value="90">9:00</option>
                   <option value="95">9:30</option>
                   <option value="100">10:00</option>
@@ -1123,10 +1199,15 @@ function MyForm() {
                   <option value="225">22:30</option>
                   <option value="230">23:00</option>
                   <option value="235">23:30</option>
+                  <option value="0">00:00</option>
+                  <option value="5">00:30</option>
+                  <option value="10">01:00</option>
                 </select>
               </td>
               <td>
-                <label class="label" htmlFor="H_ConsR">Count (per 30 minutes):</label>
+                <label class="label" htmlFor="H_ConsR">
+                  Count (per 30 minutes):
+                </label>
                 <select
                   id="H_ConsR"
                   name="H_ConsR"
@@ -1134,7 +1215,6 @@ function MyForm() {
                   onChange={handleH_ConsRChange}
                   className="custom-dropdown"
                 >
-
                   <option value="1">1</option>
                   <option value="2">2</option>
                   <option value="3">3</option>
@@ -1146,7 +1226,6 @@ function MyForm() {
                   <option value="8">8</option>
                   <option value="9">9</option>
                   <option value="10">10</option>
-
                 </select>
               </td>
             </tr>
@@ -1161,10 +1240,14 @@ function MyForm() {
                   value={Cb_EventR}
                   onChange={handleCb_EventRChange}
                 />
-                <label class="label" htmlFor="Cb_EventR">Event Room</label>
+                <label class="label" htmlFor="Cb_EventR">
+                  Event Room
+                </label>
               </td>
               <td>
-                <label class="label" htmlFor="Event_Room">Start Time :</label>
+                <label class="label" htmlFor="Event_Room">
+                  Start Time :
+                </label>
                 <select
                   id="Event_Room"
                   name="Event_Room"
@@ -1172,7 +1255,8 @@ function MyForm() {
                   onChange={handleEvent_RoomChange}
                   className="custom-dropdown"
                 >
-
+                  <option value="80">8:00</option>
+                  <option value="85">8:30</option>
                   <option value="90">9:00</option>
                   <option value="95">9:30</option>
                   <option value="100">10:00</option>
@@ -1203,10 +1287,15 @@ function MyForm() {
                   <option value="225">22:30</option>
                   <option value="230">23:00</option>
                   <option value="235">23:30</option>
+                  <option value="0">00:00</option>
+                  <option value="5">00:30</option>
+                  <option value="10">01:00</option>
                 </select>
               </td>
               <td>
-                <label class="label" htmlFor="H_EventR">Count (per 30 minutes):</label>
+                <label class="label" htmlFor="H_EventR">
+                  Count (per 30 minutes):
+                </label>
                 <select
                   id="H_EventR"
                   name="H_EventR"
@@ -1214,7 +1303,6 @@ function MyForm() {
                   onChange={handleH_EventRChange}
                   className="custom-dropdown"
                 >
-
                   <option value="1">1</option>
                   <option value="2">2</option>
                   <option value="3">3</option>
@@ -1226,7 +1314,6 @@ function MyForm() {
                   <option value="8">8</option>
                   <option value="9">9</option>
                   <option value="10">10</option>
-
                 </select>
               </td>
             </tr>
@@ -1240,10 +1327,14 @@ function MyForm() {
                   value={Cb_At}
                   onChange={handleCb_AtChange}
                 />
-                <label class="label" htmlFor="Cb_At">Axe Throwing</label>
+                <label class="label" htmlFor="Cb_At">
+                  Axe Throwing
+                </label>
               </td>
               <td>
-                <label class="label" htmlFor="Axe_Throwing">Start Time :</label>
+                <label class="label" htmlFor="Axe_Throwing">
+                  Start Time :
+                </label>
                 <select
                   id="Axe_Throwing"
                   name="Axe_Throwing"
@@ -1251,7 +1342,8 @@ function MyForm() {
                   onChange={handleAxe_ThrowingChange}
                   className="custom-dropdown"
                 >
-
+                  <option value="80">8:00</option>
+                  <option value="85">8:30</option>
                   <option value="90">9:00</option>
                   <option value="95">9:30</option>
                   <option value="100">10:00</option>
@@ -1282,10 +1374,15 @@ function MyForm() {
                   <option value="225">22:30</option>
                   <option value="230">23:00</option>
                   <option value="235">23:30</option>
+                  <option value="0">00:00</option>
+                  <option value="5">00:30</option>
+                  <option value="10">01:00</option>
                 </select>
               </td>
               <td>
-                <label class="label" htmlFor="H_At">Count (per 30 minutes):</label>
+                <label class="label" htmlFor="H_At">
+                  Count (per 30 minutes):
+                </label>
                 <select
                   id="H_At"
                   name="H_At"
@@ -1293,7 +1390,6 @@ function MyForm() {
                   onChange={handleH_AtChange}
                   className="custom-dropdown"
                 >
-
                   <option value="1">1</option>
                   <option value="2">2</option>
                   <option value="3">3</option>
@@ -1305,7 +1401,6 @@ function MyForm() {
                   <option value="8">8</option>
                   <option value="9">9</option>
                   <option value="10">10</option>
-
                 </select>
               </td>
             </tr>
@@ -1319,10 +1414,14 @@ function MyForm() {
                   value={Cb_Go}
                   onChange={handleCb_GoChange}
                 />
-                <label class="label" htmlFor="Cb_Go">Game On</label>
+                <label class="label" htmlFor="Cb_Go">
+                  Game On
+                </label>
               </td>
               <td>
-                <label class="label" htmlFor="Game_On">Start Time :</label>
+                <label class="label" htmlFor="Game_On">
+                  Start Time :
+                </label>
                 <select
                   id="Game_On"
                   name="Game_On"
@@ -1330,7 +1429,8 @@ function MyForm() {
                   onChange={handleGame_OnChange}
                   className="custom-dropdown"
                 >
-
+                  <option value="80">8:00</option>
+                  <option value="85">8:30</option>
                   <option value="90">9:00</option>
                   <option value="95">9:30</option>
                   <option value="100">10:00</option>
@@ -1361,10 +1461,15 @@ function MyForm() {
                   <option value="225">22:30</option>
                   <option value="230">23:00</option>
                   <option value="235">23:30</option>
+                  <option value="0">00:00</option>
+                  <option value="5">00:30</option>
+                  <option value="10">01:00</option>
                 </select>
               </td>
               <td>
-                <label class="label" htmlFor="H_Go">Count (per 30 minutes):</label>
+                <label class="label" htmlFor="H_Go">
+                  Count (per 30 minutes):
+                </label>
                 <select
                   id="H_Go"
                   name="H_Go"
@@ -1372,7 +1477,6 @@ function MyForm() {
                   onChange={handleH_GoChange}
                   className="custom-dropdown"
                 >
-
                   <option value="1">1</option>
                   <option value="2">2</option>
                   <option value="3">3</option>
@@ -1384,7 +1488,6 @@ function MyForm() {
                   <option value="8">8</option>
                   <option value="9">9</option>
                   <option value="10">10</option>
-
                 </select>
               </td>
             </tr>
@@ -1398,7 +1501,9 @@ function MyForm() {
                   value={Cb_Super}
                   onChange={handleCb_SuperChange}
                 />
-                <label class="label" htmlFor="Cb_Super">Super</label>
+                <label class="label" htmlFor="Cb_Super">
+                  Super
+                </label>
               </td>
               <td>
                 <input
@@ -1409,7 +1514,9 @@ function MyForm() {
                   value={Cb_Admin}
                   onChange={handleCb_AdminChange}
                 />
-                <label class="label" htmlFor="Cb_Admin">Admin</label>
+                <label class="label" htmlFor="Cb_Admin">
+                  Admin
+                </label>
               </td>
               <td>
                 <input
@@ -1420,13 +1527,17 @@ function MyForm() {
                   value={Cb_Cleaning}
                   onChange={handleCb_CleaningChange}
                 />
-                <label class="label" htmlFor="Cb_Cleaning">Cleaning</label>
+                <label class="label" htmlFor="Cb_Cleaning">
+                  Cleaning
+                </label>
               </td>
             </tr>
             <tr>
               <td colSpan={3}>
-                <div >
-                  <button class="submit" variant="contained" type="submit">Submit</button>
+                <div>
+                  <button class="submit" variant="contained" type="submit">
+                    Submit
+                  </button>
                 </div>
               </td>
             </tr>
@@ -1439,15 +1550,14 @@ function MyForm() {
 
 export default MyForm;
 async function AddUser(json) {
-  return fetch('https://bursting-choice-snapper.ngrok-free.app/addNewUsers', {
-    method: 'POST',
+  return fetch("https://bursting-choice-snapper.ngrok-free.app/addNewUsers", {
+    method: "POST",
     headers: {
-      'Content-Type': 'application/json'
+      "Content-Type": "application/json",
     },
-    body: JSON.stringify(json)
-  })
-    .then(data => {data.json()
-      console.log(data)
-    })
-    
+    body: JSON.stringify(json),
+  }).then((data) => {
+    data.json();
+    console.log(data);
+  });
 }
